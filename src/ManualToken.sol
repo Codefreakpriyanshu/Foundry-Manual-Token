@@ -73,12 +73,8 @@ contract ManualToken {
     }
 
     /**
-     * Transfer tokens
+     * Transfer token
      *
-     * Send `_value` tokens to `_to` from your account
-     *
-     * @param _to The address of the recipient
-     * @param _value the amount to send
      */
     function transfer(
         address _to,
@@ -93,9 +89,6 @@ contract ManualToken {
      *
      * Send `_value` tokens to `_to` on behalf of `_from`
      *
-     * @param _from The address of the sender
-     * @param _to The address of the recipient
-     * @param _value the amount to send
      */
     function transferFrom(
         address _from,
@@ -129,10 +122,6 @@ contract ManualToken {
      * Set allowance for other address and notify
      *
      * Allows `_spender` to spend no more than `_value` tokens on your behalf, and then ping the contract about it
-     *
-     * @param _spender The address authorized to spend
-     * @param _value the max amount they can spend
-     * @param _extraData some extra information to send to the approved contract
      */
     function approveAndCall(
         address _spender,
@@ -171,8 +160,6 @@ contract ManualToken {
      *
      * Remove `_value` tokens from the system irreversibly on behalf of `_from`.
      *
-     * @param _from the address of the sender
-     * @param _value the amount of money to burn
      */
     function burnFrom(
         address _from,
